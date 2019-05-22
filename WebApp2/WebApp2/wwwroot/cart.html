@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Корзина</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body onload="showOrder();">
+    <div class="site-wrap">
+        <header class="site-navbar" role="banner">
+            <div class="site-navbar-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+                            <!--<form action="" class="site-block-top-search">
+                        <span class="icon icon-search2"></span>
+                        <input type="text" class="form-control border-0" placeholder="Поиск">
+                        </form>-->
+                        </div>
+                        <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+                            <div class="site-logo">
+                                <a href="index.html" class="js-logo-clone">Mobile Store</a>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+                            <!--<div class="site-top-icons">
+                                <ul>
+                                    <li id="msg"></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#exampleModal"><span class="icon icon-person"></span></a></li>
+                                    <li>
+                                        <a href="cart.html" class="site-cart">
+                                            <span class="icon icon-shopping_cart"></span>
+                                        </a>
+                                    </li>
+                                    <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                                </ul>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="msgClass">
+                                            <div id="msgAuth"></div>
+                                            <div id="msg"></div>
+                                            <ul id="formError"></ul>
+                                        </div>
+                                        <div>
+                                            <label for="Email">Email: </label>
+                                            <br />
+                                            <input type="text" id="Email" name="Email">
+                                        </div>
+                                        <div>
+                                            <label for="Password">Password: </label>
+                                            <br />
+                                            <input type="password" id="Password" name="Password">
+                                        </div>
+                                    </form>
+                                    <br>
+                                    <div class="border p-4 rounded" role="alert">
+                                        Еще не зарегистрировались? <a href="register.html">Регистрация</a>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="loginBtn" class="btn btn-sm btn-primary">Войти</button>
+                                    <button id="logoffBtn" class="btn btn-sm btn-primary">Выйти</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="bg-light py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-0"><a href="index.html">Главная</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Корзина</strong></div>
+                </div>
+            </div>
+        </div>
+        <div class="site-section">
+            <div class="container">
+                <div id="CartDiv"></div>
+            </div>
+        </div>      
+                <footer class="site-footer border-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 mb-5 mb-lg-0">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 class="footer-heading mb-4">Подвал</h3>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">О нас</a></li>
+                                            <li><a href="#">Доставка</a></li>
+                                            <li><a href="#">Оплата</a></li>
+                                            <li><a href="#">Новости</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Адреса магазинов</a></li>
+                                            <li><a href="#">Гарантия</a></li>
+                                            <li><a href="#">Адреса сервисных центров</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Арендодателям</a></li>
+                                            <li><a href="#">Корпоративным клиентам</a></li>
+                                            <li><a href="#">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="block-5 mb-5">
+                                    <h3 class="footer-heading mb-4">Контактная информация</h3>
+                                    <ul class="list-unstyled">
+                                        <li class="address">ИГЭУ ПОКС</li>
+                                        <li class="phone"><a href="tel://23923929210">+8-800-555-35-35</a></li>
+                                        <li class="email">emailaddress@ya.ru</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+            <script src="js/scripts.js"></script>
+            <script src="js/script-cart-service.js"></script>
+
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="js/jquery-ui.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/jquery.magnific-popup.min.js"></script>
+            <script src="js/aos.js"></script>
+            <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Регистрация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .msg-error {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="site-wrap">
+        <header class="site-navbar" role="banner">
+            <div class="site-navbar-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+                            <!--<form action="" class="site-block-top-search">
+                                <span class="icon icon-search2"></span>
+                                <input type="text" class="form-control border-0" placeholder="Поиск">
+                            </form>-->
+                        </div>
+                        <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+                            <div class="site-logo">
+                                <a href="index.html" class="js-logo-clone">Mobile Store</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="site-navigation text-right text-md-center" role="navigation">
+                <div class="container">
+                    <ul class="site-menu js-clone-nav d-none d-md-block">
+                        <li><a href="index.html">Главная</a></li>
+                        <li class="has-children">
+                            <a href="categories.html">Каталог товаров</a>
+                            <ul class="dropdown">
+                                <li><a href="shop.html">Смартфоны</a></li>
+                                <li><a href="#">Кнопочные</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="bg-light py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mb-0"><a href="index.html">Главная</a> <span class="mx-2 mb-0">/</span><strong class="text-black">Регистрация</strong></div>
+                </div>
+            </div>
+        </div>
+        <div class="site-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="h3 mb-3 text-black">Регистрация нового пользователя</h2>
+                    </div>
+                    <div class="col-md-5">
+                        <form>
+                            <div class="p-3 p-lg-5 border">
+                                <div class="msg-error"> <!--вывод ошибок-->
+                                    <div class="col-md-12" id="msg"></div>
+                                    <ul id="formError"></ul>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label for="email" class="text-black">Email<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="email" name="email" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label for="password" class="text-black">Пароль<span class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" id="password" name="password">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <label for="passwordConfirm" class="text-black">Подтверждение пароля<span class="text-danger">*</span></label>
+                                        <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-12">
+                                        <button type="submit" id="registerBtn" class="btn btn-primary btn-lg btn-block">Зарегистрироваться</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <footer class="site-footer border-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="footer-heading mb-4">Подвал</h3>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Доставка</a></li>
+                                    <li><a href="#">Оплата</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Адреса магазинов</a></li>
+                                    <li><a href="#">Гарантия</a></li>
+                                    <li><a href="#">Адреса сервисных центров</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <ul class="list-unstyled">
+                                    <li><a href="#">Арендодателям</a></li>
+                                    <li><a href="#">Корпоративным клиентам</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="block-5 mb-5">
+                            <h3 class="footer-heading mb-4">Контактная информация</h3>
+                            <ul class="list-unstyled">
+                                <li class="address">ИГЭУ ПОКС</li>
+                                <li class="phone"><a href="tel://23923929210">+8-800-555-35-35</a></li>
+                                <li class="email">emailaddress@ya.ru</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/register.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
